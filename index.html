@@ -1,97 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Webpage</title>
 
-    <title>Hello!</title>
-    
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="style.css">
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
-  <body>
-    <h1>Hi there!</h1>
-    
-    <p>
-      Go to the <a href="/about.html">about</a> page</p>
-    
-    <p>Go to the <a href="#section2">section 2</a> in this page</p>
+
     <style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-  text-align: left;    
-}
-</style>
-</head>
-<body>
+      #category_boxes{
+        padding: 0px 60px 10px;
+        height: 300px;
+      }
 
-<h2>About David Hockney</h2>
+      @media screen and (max-width: 920px) {
+        #category_boxes{
+          padding: 0px 60px 0px 25px;
+        }
+      }
 
-<table style="width:30%">
-  <tr>
-    <th>Name:</th>
-    <td>David Hockney</td>
-  </tr>
-  <tr>
-    <th rowspan="2">Medium:</th>
-    <td>Painting</td>
-  </tr>
-  <tr>
-    <td>Stage director</td>
-  </tr>
-  <tr>
-    <th>Address:</th>
-    <td>United Kingdom</td>
-  </tr>
-</table>
-    <p>
-      
-  </p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros placerat, dictum nisl non, mollis dolor.
-    
-    Duis vel massa velit. Maecenas tristique mi nec ipsum dapibus, sed mollis urna tincidunt. Duis ornare risus tristique, 
-    porttitor eros nec, laoreet erat. Donec lobortis, diam nec faucibus fringilla, purus turpis fermentum nisi, sit amet sagittis
-    elit purus sit amet turpis. Sed mollis sem eu nisi blandit rhoncus. Vivamus dignissim vestibulum nibh, non pellentesque nunc 
-    pharetra vel. Nunc lacus quam, suscipit eget varius et, congue a nisi. Suspendisse quis justo mi.Nam hendrerit, orci nec 
-    tincidunt aliquam, velit mi rutrum sapien, ut consequat eros erat et nibh. Vestibulum ullamcorper lacus arcu, ac porttitor 
-    nisi tristique porttitor. Vestibulum efficitur dui quis sapien pharetra, a malesuada quam rutrum. Donec malesuada neque ac 
-    varius semper. Nullam pharetra ac magna hendrerit finibus. Curabitur finibus, lacus ut porttitor cursus, ex tortor faucibus 
-    lorem, egestas luctus nibh tellus in dui. Sed tempus aliquet dolor, quis cursus mauris sodales ac. Phasellus pellentesque 
-    blandit justo, ac tempor nulla volutpat lacinia. Maecenas laoreet felis leo, quis consequat neque pulvinar at. Nullam tempus 
-    turpis eu dolor pellentesque mattis. Pellentesque porta sapien et lorem ornare, eu volutpat lectus venenatis. Sed eu iaculis 
-    mauris. Vivamus viverra libero eget eros pretium, ut suscipit nisl malesuada.Cras et dolor in ante imperdiet bibendum sed sit 
-    amet dolor. Sed vitae arcu eu nibh egestas tempus.<p>
-    
-    </p> 
-    Fusce tincidunt sem eu mi dapibus, vel tincidunt neque tempus. Nam ullamcorper dui augue, at sagittis massa pellentesque ut. Donec sagittis egestas ultrices. Vestibulum vehicula molestie velit in aliquet. Quisque elit leo, pretium quis tortor eu, accumsan vulputate nunc. Sed fringilla, ligula eget volutpat blandit, nibh erat ullamcorper velit, id dictum felis risus a turpis. Mauris dignissim ultrices urna, ut luctus urna semper vitae.
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com" target="_blank">Glitch</a>!
-    </p>
-    
-    <h2 id="section2">Section 2</h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros placerat, dictum nisl non, mollis dolor. Duis vel massa velit. Maecenas tristique mi nec ipsum dapibus, sed mollis urna tincidunt. Duis ornare risus tristique, porttitor eros nec, laoreet erat. Donec lobortis, diam nec faucibus fringilla, purus turpis fermentum nisi, sit amet sagittis elit purus sit amet turpis. Sed mollis sem eu nisi blandit rhoncus. Vivamus dignissim vestibulum nibh, non pellentesque nunc pharetra vel. Nunc lacus quam, suscipit eget varius et, congue a nisi. Suspendisse quis justo mi.
+      .category_boxes_column {
+        float: left;
+        width: 30.5%;
+        padding: 5px 10px;
+        height: 270px; 
+        margin: 0px 5px;
+      }
 
-Nam hendrerit, orci nec tincidunt aliquam, velit mi rutrum sapien, ut consequat eros erat et nibh. Vestibulum ullamcorper lacus arcu, ac porttitor nisi tristique porttitor. Vestibulum efficitur dui quis sapien pharetra, a malesuada quam rutrum. Donec malesuada neque ac varius semper. Nullam pharetra ac magna hendrerit finibus. Curabitur finibus, lacus ut porttitor cursus, ex tortor faucibus lorem, egestas luctus nibh tellus in dui. Sed tempus aliquet dolor, quis cursus mauris sodales ac. Phasellus pellentesque blandit justo, ac tempor nulla volutpat lacinia. Maecenas laoreet felis leo, quis consequat neque pulvinar at. Nullam tempus turpis eu dolor pellentesque mattis. Pellentesque porta sapien et lorem ornare, eu volutpat lectus venenatis. Sed eu iaculis mauris. Vivamus viverra libero eget eros pretium, ut suscipit nisl malesuada.
+      @media screen and (max-width: 1200px) {
+        .category_boxes_column {
+          width: 30%
+        }
+      }
 
-Cras et dolor in ante imperdiet bibendum sed sit amet dolor. Sed vitae arcu eu nibh egestas tempus. Fusce tincidunt sem eu mi dapibus, vel tincidunt neque tempus. Nam ullamcorper dui augue, at sagittis massa pellentesque ut. Donec sagittis egestas ultrices. Vestibulum vehicula molestie velit in aliquet. Quisque elit leo, pretium quis tortor eu, accumsan vulputate nunc. Sed fringilla, ligula eget volutpat blandit, nibh erat ullamcorper velit, id dictum felis risus a turpis. Mauris dignissim ultrices urna, ut luctus urna semper vitae.
-      Phasellus sed suscipit arcu, in aliquet justo. Donec nec tellus sollicitudin, aliquam sapien vel, varius lectus. Mauris pretium ullamcorper urna vel dapibus. Praesent eu mauris tempor, sagittis nisl ut, porta ante. Etiam venenatis tempor purus ultrices vestibulum. Sed nec neque orci. Mauris viverra dui orci, ac dignissim odio egestas in. Vivamus sit amet urna purus. Suspendisse nisl tortor, consequat interdum orci eget, ullamcorper consectetur dolor.
+      @media screen and (max-width: 1040px) {
+        .category_boxes_column {
+          width: 29.5%
+        }
+      }
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc lobortis lorem vitae orci sodales, vel vulputate urna rutrum. Sed semper velit risus, ut sollicitudin ex dapibus in. Aenean non ultrices magna. Vestibulum faucibus tellus sit amet dolor pellentesque mollis. Morbi vel urna neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris in metus eu elit efficitur laoreet ultricies eu quam. Nullam egestas nibh a risus cursus, a accumsan lacus venenatis. Fusce finibus blandit orci, a bibendum justo placerat ac. Donec eget pretium purus. <p>
-      
-      </p>Praesent suscipit nibh eget risus cursus, eu pellentesque ipsum sodales. Donec dictum laoreet eros a tincidunt.
+      @media screen and (max-width: 920px) {
+        #category_boxes{
+          height: 850px;
+        }
+
+        .category_boxes_column {
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 0px 10px;
+        }
+      }
+
+      /* Clear floats after the columns */
+      .category_boxes_row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .footer-distributed {
+        background-color: lightblue;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: normal 16px sans-serif;
+        padding: 45px 50px;
+      }
+    </style>
+  </head>
   
+  <body style="background-color:lightpink;">
+    <div class="sticky-section">
+      <nav>
+        <a class="/contact">Contact</a>
+        <a href="/works.html">Works</a>
+        <a href="/About David Hockney.html">Biography</a>
+        <a href="/index.html">Home</a>
+      </nav>
+    </div>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <h1>David<br>Hockney</h1>
+    <p>Learn more about the all-round British artist’s life, what influenced him to
+    be the artist<br>he is today and how he has influenced pop art in the 20th century with his
+    wonderful works.</p>
+
+    <form action="About David Hockney.html" method="get" style="padding-top: 5px;">
+      <button type="About David Hockney.html"style="background-color:beige;height: 50px; width: 100px;">Read Here</button>
+    </form>
+
+    <br>
+
+    <section id="heading_section" style="background-color: transparent;">
+      <div class="heading_row">
+        <div class="heading_column left">
+          <img border="1" src="https://cdn.glitch.com/7ef36b6f-ef95-4a6b-9dbc-db2c8ca327f7%2F49734366246_f1b77675f3_o.png?v=1604796747982" width="100%"> 
+        </div>
+        <div class="heading_column right">
+          <p class="heading_sentence">"If you see the world as beautiful, thrilling and mysterious, as I think I do, then you feel quite alive." ~ David Hockney</p>
+        </div>
+      </div> 
+    </section>
+  
+    <section id="category_boxes" style="background-color: transparent;padding-top: 0px;">
+      <div class="category_boxes_row">
+        <div class="category_boxes_column" style="background-color:#ccc;">
+          <h2 style="margin-bottom: 0px;font-size: 20px;">Pop Art</h2>
+          <p style="font-weight: normal;font-size: 15px;margin: 0px;">Ever thought about what Pop art is and why it is seen everywhere today? Read more to find out how it all started.</p>
+          <form action="What-is-pop-art.html" method="get" style="padding-top: 5px;">
+      <button type="What-is-pop-art.html"style="background-color:beige;height: 50px; width: 100px;">Learn more</button>
+    </form>
+        </div>
+        <div class="category_boxes_column" style="background-color:#ddd;">
+          <h2 style="margin-bottom: 0px;font-size: 20px;">Image Gallery</h2>
+          <p style="font-weight: normal;font-size: 15px;margin: 0px;">Browse through Hockney’s most renowned paintings and discover the hidden meanings behind his colourful paintings.
+            <form action="works.html" method="get" style="padding-top: 5px;">
+      <button type="works.html"style="background-color:beige;height: 50px; width: 100px;">Discover</button>
+    </form>
+</p>
+        </div>
+        <div class="category_boxes_column" style="background-color:#eee;">
+          <h2 style="margin-bottom: 0px;font-size: 20px;">Events</h2>
+          <p style="font-weight: normal;font-size: 15px;margin: 0px;">Interested to learn more about art? Check out our latest art events and classes! Click here to read more or sign up!</p>
+          <form action="events.html" method="get" style="padding-top: 5px;">
+      <button type="events.html"style="background-color:beige;height: 50px; width: 100px;">Sign Up</button>
+    </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-right"></div>
+      <div class="footer-left">
+        <p class="footer-links"></p>
+        <p> &copy; 2020</p>
+      </div>
+    </footer>
   </body>
 </html>
