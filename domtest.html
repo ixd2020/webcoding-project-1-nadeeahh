@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+     
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    
+<h1 onclick="changeText(this)">Click on this text!</h1>
+<p onclick="changeText(this)">Click on this text!</p>
+<p onclick="changeText(this)">Click on this text!</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:yellow;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+    <p>Click here for a surprise.</p>
+
+<button id="myBtn">Try it</button>
+
+<script>
+  function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+document.getElementById("demo").innerHTML = "Hello World!";
+  document.getElementById("demo2").innerHTML = "This is my second line!";
+  function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+ document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert("YOU WON $0 CONGRATULATIONS! PLS CLAIM YOUR PRIZE!");
+} 
+</script>
+  </body>
+</html>
