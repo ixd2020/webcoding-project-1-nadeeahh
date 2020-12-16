@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* CSS Document */
+
+  body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    padding: 0;
+  }
+
+  h1 {
+    font-style: bold;
+    color: black;
+    font-size:70px;
+    font-family: Arial;  
+  }
+
+ .sticky-section{
+    overflow:hidden;
+    background-color:lightblue; 
+    margin-bottom:50px;
+    width:100%; 
+    color:white;
+  }
+
+  nav a{
+    float:right;
+    text-decoration:none;
+    color:white;
+    font-size:18px; 
+    padding: 20px 30px; 
+    display:inline-block; 
+    transition: all 0.5s ease 0s;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  nav a:hover{
+    background-color:beige; 
+    color:black; 
+  }
+nav a.active {
+  background-color: #ffd5dc;
+  color: #2d2d2d;
+}
+
+  .sticky-section{
+    position:sticky;
+    position:-webkit-sticky;
+    top:0px;
+  }
+h1{
+  margin:230px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+body {
+    font-family: 'Average Sans';font-size: 16px;
+}
+* {
+  box-sizing:border-box;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+body {
+    font-family: 'Average Sans';font-size: 16px;
+}
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column1 {
+  border-radius: 25px;
+  float: left;
+  width: 25%;
+  padding: 20px;
+  height: 300px;
+  margin:10px;
+  margin-left:50px;
+  margin-bottom:50px;/* Should be removed. Only for demonstration */
+}
+.column2 {
+  border-radius: 25px;
+  float: left;
+  width: 25%;
+  padding: 20px;
+  height: 300px;
+  margin:10px;
+  margin-left:50px;
+  margin-bottom:50px;
+}
+.column3 {
+  border-radius: 25px;
+  float: left;
+  width: 25%;
+  padding: 20px;
+  height: 300px;
+  margin:10px;
+  margin-left:50px;
+  margin-bottom:50px;
+}
+.column4 {
+  border-radius: 25px;
+  float: left;
+  width: 25%;
+  padding: 20px;
+  height: 300px;
+  margin:10px;
+  margin-left:50px;
+  margin-bottom:50px;
+}
+.column5 {
+  border-radius: 25px;
+  float: left;
+  width: 25%;
+  padding: 20px;
+  height: 300px;
+  margin:10px;
+  margin-left:50px;
+  margin-bottom:50px;
+}
+.column6 {
+  border-radius: 25px;
+  float: left;
+  width: 25%;
+  padding: 20px;
+  height: 300px;
+  margin:10px;
+  margin-left:50px;
+  margin-bottom:50px;
+}
+
+.column1{
+  width: 33.33%;
+}
+.column2{
+  width: 33.33%;
+}
+.column3{
+  width: 33.33%;
+}
+.column4{
+  width: 33.33%;
+}
+.column5{
+  width: 33.33%;
+}
+.column6{
+  width: 33.33%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width:800px) {
+  .column1, .column2, .column3, .column4, .column5, .column6 {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+}

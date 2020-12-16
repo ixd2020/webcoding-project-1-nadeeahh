@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Average Sans"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #92d8ff;
+        color: black;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #fdfee9;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <head>
+    <title>Webpage</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/popstyle.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <body style="background-color:mistyrose;">
+      <div class="sticky-section">
+        <nav>
+          <a class="active" href="/contact.html">Contact</a>
+          <a href="/work.html">Works</a>
+          <a href="/About-David-Hockney.html">Biography</a>
+          <a href="/index.html">Home</a>
+        </nav>
+      </div>
+      <img
+        src="https://cdn.glitch.com/7ef36b6f-ef95-4a6b-9dbc-db2c8ca327f7%2Fman-on-phone.svg?v=1608126357588"
+        style="width:100px; height:100px; margin-top:10px;margin-left:570px;"
+      />
+      <h1>Contact Us</h1>
+
+      <div class="container">
+        <form action="/index.html">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Enter name..."
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="address"
+            placeholder="Enter email..."
+          />
+
+          <label for="email">Phone number</label>
+          <input
+            type="text"
+            id="phone"
+            name="number"
+            placeholder="Enter phone number..."
+          />
+
+          <label for="feedback">Questions or Feedback:</label>
+          <textarea
+            id="feedback"
+            name="feedback"
+            placeholder="Write something.."
+            style="height:200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+        <p>Click <a href="/index.html">here</a> to return to the homepage.</p>
+        <br />
+      </div>
+    </body>
+  </body>
+</html>
